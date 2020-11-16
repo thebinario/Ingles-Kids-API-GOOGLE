@@ -1,0 +1,57 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        clear: both;
+    }
+    .app{
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        border: 1px solid grey;
+        width: 400px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .btplay{
+        margin-top: 40px;
+    }
+    .btplay button{
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+    }
+    .btplay img{
+        width: 100%;
+        height: 100%;
+    }
+    iframe{
+       /* border: 1px solid green;   */
+        width: 100%;
+        height: 100%;
+    }
+    #volt{
+        margin-top: 65px;
+        margin-bottom: auto;
+        width: 25px;
+        height: 35%;
+        border-radius: 25px 0 0 25px;
+    }
+    #prox{
+        margin-top: 65px;
+        margin-bottom: auto;
+        width: 25px;
+        height: 35%;
+        border-radius: 0 25px 25px 0;
+    }

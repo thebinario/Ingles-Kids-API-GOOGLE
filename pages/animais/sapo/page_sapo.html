@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+<body>
+    <div class="image">
+        <img src="../../../media/animais/sapo/sapo.png" alt="">
+    </div>
+    <hr>
+    <div class="butoes">
+        <audio>
+            <source  type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        <div class="bt1">
+            <button onclick="startAudio('sapo','pt')">
+                PT
+            </button>
+        </div>
+        <div class="bt2">
+            <button onclick="startAudio('frog','en')">
+                EN
+            </button>
+        </div>
+    </div>
+
+</body>
+<script>
+    var audio = document.querySelector('audio');
+    audio.autoplay = true;
+
+    function startAudio(palavra,pronucia) {
+
+        try  {
+            audio.src = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q="+ palavra +"&tl=" + pronucia +"&total=1&idx=0&textlen=4";
+
+        }catch{
+            audio.src = "../../../media/animais/sapo/sapo.mp3" ;
+        }
+    }
+</script>
+</html>
